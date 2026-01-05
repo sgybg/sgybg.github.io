@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>关于我 | 你的名字</title>
+    <meta name="description" content="了解更多关于我的故事、技能和经历">
+    
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>👨‍💻</text></svg>">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/animations.css">
+    <link rel="stylesheet" href="../css/pages.css">
+</head>
+<body>
+    <div class="bg-grid"></div>
+    <div class="bg-glow bg-glow-1"></div>
+    <div class="bg-glow bg-glow-2"></div>
+
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="../index.html" class="logo">&lt;YourName /&gt;</a>
+            
+            <button class="mobile-menu-btn" aria-label="菜单">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            
+            <ul class="nav-links">
+                <li><a href="../index.html">首页</a></li>
+                <li><a href="about.html" class="active">关于</a></li>
+                <li><a href="projects.html">项目</a></li>
+                <li><a href="contact.html">联系</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="page-transition">
+        <!-- 页面标题 -->
+        <section class="page-header">
+            <div class="section-header fade-in">
+                <span class="section-tag">// 关于我</span>
+                <h1 class="section-title">探索我的故事</h1>
+                <p class="section-subtitle">每一行代码都是一次创造，每一个项目都是一段旅程</p>
+            </div>
+        </section>
+
+        <!-- 个人介绍 -->
+        <section class="about-intro">
+            <div class="about-grid">
+                <div class="about-image fade-in">
+                    <div class="code-window">
+                        <div class="code-header">
+                            <div class="code-dot"></div>
+                            <div class="code-dot"></div>
+                            <div class="code-dot"></div>
+                            <span class="code-title">about.json</span>
+                        </div>
+                        <div class="code-content">
+                            <pre><code>{
+  <span class="code-property">"name"</span>: <span class="code-string">"你的名字"</span>,
+  <span class="code-property">"role"</span>: <span class="code-string">"全栈开发者"</span>,
+  <span class="code-property">"location"</span>: <span class="code-string">"中国"</span>,
+  <span class="code-property">"experience"</span>: <span class="code-string">"3+ 年"</span>,
+  <span class="code-property">"education"</span>: <span class="code-string">"计算机科学"</span>,
+  <span class="code-property">"interests"</span>: [
+    <span class="code-string">"Web开发"</span>,
+    <span class="code-string">"人工智能"</span>,
+    <span class="code-string">"开源项目"</span>
+  ],
+  <span class="code-property">"available"</span>: <span class="code-value">true</span>
+}</code></pre>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-text fade-in">
+                    <h2>你好！👋</h2>
+                    <p>
+                        我是一名充满热情的全栈开发者，对技术和设计有着深厚的兴趣。我相信好的产品不仅要功能强大，更要拥有出色的用户体验。
+                    </p>
+                    <p>
+                        在过去的几年里，我专注于 Web 开发、移动应用和人工智能领域。我喜欢学习新技术，解决复杂问题，并将想法转化为现实。
+                    </p>
+                    <p>
+                        工作之余，我喜欢阅读技术博客、参与开源项目，以及探索新的设计趋势。我相信持续学习是成长的关键。
+                    </p>
+
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <div class="stat-number">3+</div>
+                            <div class="stat-label">年开发经验</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">20+</div>
+                            <div class="stat-label">完成项目</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">10+</div>
+                            <div class="stat-label">技术栈</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 技能 -->
+        <section class="skills-section">
+            <div class="section-header fade-in">
+                <span class="section-tag">// 技能</span>
+                <h2 class="section-title">技术栈</h2>
+            </div>
+
+            <div class="skills-grid">
+                <!-- 前端 -->
+                <div class="skill-card fade-in">
+                    <div class="skill-icon">🎨</div>
+                    <h3>前端开发</h3>
+                    <p>构建响应式、交互丰富的现代化用户界面</p>
+                    <div class="skill-tags">
+                        <span class="skill-tag">HTML5</span>
+                        <span class="skill-tag">CSS3</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">TypeScript</span>
+                        <span class="skill-tag">React</span>
+                        <span class="skill-tag">Vue.js</span>
+                        <span class="skill-tag">Tailwind</span>
+                    </div>
+                </div>
+
+                <!-- 后端 -->
+                <div class="skill-card fade-in">
+                    <div class="skill-icon">⚙️</div>
+                    <h3>后端开发</h3>
+                    <p>设计和实现高性能、可扩展的服务端架构</p>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Node.js</span>
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">Go</span>
+                        <span class="skill-tag">Express</span>
+                        <span class="skill-tag">FastAPI</span>
+                        <span class="skill-tag">PostgreSQL</span>
+                        <span class="skill-tag">MongoDB</span>
+                    </div>
+                </div>
+
+                <!-- 移动端 -->
+                <div class="skill-card fade-in">
+                    <div class="skill-icon">📱</div>
+                    <h3>移动开发</h3>
+                    <p>开发跨平台的原生体验移动应用</p>
+                    <div class="skill-tags">
+                        <span class="skill-tag">React Native</span>
+                        <span class="skill-tag">Flutter</span>
+                        <span class="skill-tag">iOS</span>
+                        <span class="skill-tag">Android</span>
+                    </div>
+                </div>
+
+                <!-- AI -->
+                <div class="skill-card fade-in">
+                    <div class="skill-icon">🤖</div>
+                    <h3>人工智能</h3>
+                    <p>探索和应用机器学习与深度学习技术</p>
+                    <div class="skill-tags">
+                        <span class="skill-tag">PyTorch</span>
+                        <span class="skill-tag">TensorFlow</span>
+                        <span class="skill-tag">LLM</span>
+                        <span class="skill-tag">NLP</span>
+                        <span class="skill-tag">OpenAI</span>
+                    </div>
+                </div>
+
+                <!-- 云服务 -->
+                <div class="skill-card fade-in">
+                    <div class="skill-icon">☁️</div>
+                    <h3>云服务 & DevOps</h3>
+                    <p>部署和管理云端基础设施</p>
+                    <div class="skill-tags">
+                        <span class="skill-tag">AWS</span>
+                        <span class="skill-tag">Docker</span>
+                        <span class="skill-tag">Kubernetes</span>
+                        <span class="skill-tag">CI/CD</span>
+                        <span class="skill-tag">GitHub Actions</span>
+                    </div>
+                </div>
+
+                <!-- 工具 -->
+                <div class="skill-card fade-in">
+                    <div class="skill-icon">🛠️</div>
+                    <h3>工具 & 其他</h3>
+                    <p>高效的开发工具和工作流程</p>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Git</span>
+                        <span class="skill-tag">VS Code</span>
+                        <span class="skill-tag">Figma</span>
+                        <span class="skill-tag">Linux</span>
+                        <span class="skill-tag">REST API</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 经历时间线 -->
+        <section class="timeline-section">
+            <div class="section-header fade-in">
+                <span class="section-tag">// 经历</span>
+                <h2 class="section-title">职业旅程</h2>
+            </div>
+
+            <div class="timeline">
+                <div class="timeline-item fade-in">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2023 - 至今</span>
+                        <h3>高级前端开发工程师</h3>
+                        <p class="timeline-company">某科技公司</p>
+                        <p>负责核心产品的前端架构设计和开发，带领团队完成多个重要项目。</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item fade-in">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2021 - 2023</span>
+                        <h3>全栈开发工程师</h3>
+                        <p class="timeline-company">某互联网公司</p>
+                        <p>参与多个 Web 应用和移动应用的开发，积累了丰富的全栈经验。</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item fade-in">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2020 - 2021</span>
+                        <h3>初级开发工程师</h3>
+                        <p class="timeline-company">某创业公司</p>
+                        <p>从零开始学习 Web 开发，快速成长并独立完成多个项目。</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item fade-in">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2016 - 2020</span>
+                        <h3>计算机科学学士</h3>
+                        <p class="timeline-company">某大学</p>
+                        <p>系统学习计算机科学基础知识，参与多个校内项目和竞赛。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 兴趣爱好 -->
+        <section class="interests-section">
+            <div class="section-header fade-in">
+                <span class="section-tag">// 兴趣</span>
+                <h2 class="section-title">工作之外</h2>
+            </div>
+
+            <div class="interests-grid">
+                <div class="interest-item fade-in">
+                    <span class="interest-icon">📚</span>
+                    <span>阅读</span>
+                </div>
+                <div class="interest-item fade-in">
+                    <span class="interest-icon">🎮</span>
+                    <span>游戏</span>
+                </div>
+                <div class="interest-item fade-in">
+                    <span class="interest-icon">🎵</span>
+                    <span>音乐</span>
+                </div>
+                <div class="interest-item fade-in">
+                    <span class="interest-icon">📷</span>
+                    <span>摄影</span>
+                </div>
+                <div class="interest-item fade-in">
+                    <span class="interest-icon">✈️</span>
+                    <span>旅行</span>
+                </div>
+                <div class="interest-item fade-in">
+                    <span class="interest-icon">🏃</span>
+                    <span>跑步</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="cta fade-in">
+            <div class="cta-content">
+                <h2>想了解更多？</h2>
+                <p>查看我的项目或直接联系我</p>
+                <div class="cta-buttons">
+                    <a href="projects.html" class="btn btn-primary">查看项目</a>
+                    <a href="contact.html" class="btn btn-secondary">联系我</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-info">
+                <a href="../index.html" class="logo">&lt;YourName /&gt;</a>
+                <p>用代码创造价值，用设计传递美感</p>
+            </div>
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h4>导航</h4>
+                    <a href="../index.html">首页</a>
+                    <a href="about.html">关于</a>
+                    <a href="projects.html">项目</a>
+                    <a href="contact.html">联系</a>
+                </div>
+                <div class="footer-column">
+                    <h4>社交</h4>
+                    <a href="https://github.com/yourusername" target="_blank">GitHub</a>
+                    <a href="https://linkedin.com/in/yourusername" target="_blank">LinkedIn</a>
+                    <a href="https://twitter.com/yourusername" target="_blank">Twitter</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 <span class="highlight">你的名字</span>. 保留所有权利.</p>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

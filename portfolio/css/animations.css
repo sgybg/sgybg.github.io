@@ -1,0 +1,422 @@
+/* ==========================================
+   动画效果
+   这个文件包含所有的动画和过渡效果
+   ========================================== */
+
+/* ==========================================
+   背景动画
+   ========================================== */
+.bg-glow-1 {
+    animation: floatGlow 20s ease-in-out infinite;
+}
+
+.bg-glow-2 {
+    animation: floatGlow 25s ease-in-out infinite reverse;
+}
+
+@keyframes floatGlow {
+    0%, 100% { 
+        transform: translate(0, 0) scale(1); 
+    }
+    33% { 
+        transform: translate(50px, -50px) scale(1.1); 
+    }
+    66% { 
+        transform: translate(-30px, 30px) scale(0.9); 
+    }
+}
+
+/* ==========================================
+   Hero 区域动画
+   ========================================== */
+.hero-badge {
+    animation: fadeInUp 0.8s ease forwards;
+}
+
+.hero-badge::before {
+    animation: pulse 2s ease-in-out infinite;
+}
+
+.hero h1 {
+    animation: fadeInUp 0.8s ease 0.1s forwards;
+    opacity: 0;
+}
+
+.hero-description {
+    animation: fadeInUp 0.8s ease 0.2s forwards;
+    opacity: 0;
+}
+
+.hero-buttons {
+    animation: fadeInUp 0.8s ease 0.3s forwards;
+    opacity: 0;
+}
+
+.hero-visual {
+    animation: fadeInUp 0.8s ease 0.4s forwards;
+    opacity: 0;
+}
+
+@keyframes pulse {
+    0%, 100% { 
+        opacity: 1; 
+        transform: scale(1); 
+    }
+    50% { 
+        opacity: 0.5; 
+        transform: scale(1.3); 
+    }
+}
+
+/* ==========================================
+   头像动画
+   ========================================== */
+.avatar-ring {
+    animation: rotate 10s linear infinite;
+}
+
+.avatar-ring::before {
+    animation: rotate 25s linear infinite reverse;
+}
+
+@keyframes rotate {
+    from { 
+        transform: rotate(0deg); 
+    }
+    to { 
+        transform: rotate(360deg); 
+    }
+}
+
+/* 浮动徽章动画 */
+.floating-badge {
+    animation: floatBadge 4s ease-in-out infinite;
+}
+
+.badge-1 {
+    animation-delay: 0s;
+}
+
+.badge-2 {
+    animation-delay: 1.3s;
+}
+
+.badge-3 {
+    animation-delay: 2.6s;
+}
+
+@keyframes floatBadge {
+    0%, 100% { 
+        transform: translateY(0); 
+    }
+    50% { 
+        transform: translateY(-12px); 
+    }
+}
+
+/* ==========================================
+   淡入动画
+   ========================================== */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* 滚动触发的淡入效果 */
+.fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.fade-in-left {
+    opacity: 0;
+    transform: translateX(-30px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.fade-in-left.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.fade-in-right {
+    opacity: 0;
+    transform: translateX(30px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.fade-in-right.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* 延迟动画 - 用于列表项 */
+.fade-in:nth-child(1) { transition-delay: 0s; }
+.fade-in:nth-child(2) { transition-delay: 0.1s; }
+.fade-in:nth-child(3) { transition-delay: 0.2s; }
+.fade-in:nth-child(4) { transition-delay: 0.3s; }
+.fade-in:nth-child(5) { transition-delay: 0.4s; }
+.fade-in:nth-child(6) { transition-delay: 0.5s; }
+
+/* ==========================================
+   悬停效果
+   ========================================== */
+
+/* 卡片悬停发光效果 */
+.service-card::before,
+.project-card::before,
+.skill-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: var(--accent-gradient);
+    transform: scaleX(0);
+    transition: transform 0.4s ease;
+}
+
+.service-card:hover::before,
+.project-card:hover::before,
+.skill-card:hover::before {
+    transform: scaleX(1);
+}
+
+/* 按钮悬停波纹效果 */
+.btn {
+    position: relative;
+    overflow: hidden;
+}
+
+.btn::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    transition: width 0.6s ease, height 0.6s ease;
+}
+
+.btn:hover::after {
+    width: 300px;
+    height: 300px;
+}
+
+/* 链接下划线动画 */
+.animated-link {
+    position: relative;
+}
+
+.animated-link::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: var(--accent-gradient);
+    transition: width 0.3s ease;
+}
+
+.animated-link:hover::after {
+    width: 100%;
+}
+
+/* ==========================================
+   加载动画
+   ========================================== */
+.loading-spinner {
+    width: 40px;
+    height: 40px;
+    border: 3px solid rgba(255, 255, 255, 0.1);
+    border-top-color: var(--accent-cyan);
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* 打字机效果 */
+.typewriter {
+    overflow: hidden;
+    border-right: 3px solid var(--accent-cyan);
+    white-space: nowrap;
+    animation: 
+        typing 3.5s steps(40, end),
+        blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+    from { 
+        width: 0; 
+    }
+    to { 
+        width: 100%; 
+    }
+}
+
+@keyframes blink-caret {
+    from, to { 
+        border-color: transparent; 
+    }
+    50% { 
+        border-color: var(--accent-cyan); 
+    }
+}
+
+/* ==========================================
+   页面过渡
+   ========================================== */
+.page-transition {
+    animation: pageEnter 0.5s ease;
+}
+
+@keyframes pageEnter {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ==========================================
+   技能进度条动画
+   ========================================== */
+.skill-progress {
+    height: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.skill-progress-bar {
+    height: 100%;
+    background: var(--accent-gradient);
+    border-radius: 4px;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 1s ease;
+}
+
+.skill-progress-bar.animate {
+    transform: scaleX(1);
+}
+
+/* ==========================================
+   数字计数动画
+   ========================================== */
+.count-up {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.count-up.visible {
+    opacity: 1;
+}
+
+/* ==========================================
+   图片悬停效果
+   ========================================== */
+.image-hover {
+    overflow: hidden;
+}
+
+.image-hover img {
+    transition: transform 0.5s ease;
+}
+
+.image-hover:hover img {
+    transform: scale(1.1);
+}
+
+/* ==========================================
+   波浪动画（装饰用）
+   ========================================== */
+.wave {
+    animation: wave 2s ease-in-out infinite;
+}
+
+@keyframes wave {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+/* ==========================================
+   关闭动画的偏好设置
+   如果用户系统设置了减少动画，则禁用动画
+   ========================================== */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+    
+    .fade-in,
+    .fade-in-left,
+    .fade-in-right {
+        opacity: 1;
+        transform: none;
+    }
+}

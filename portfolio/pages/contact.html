@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>联系我 | 你的名字</title>
+    <meta name="description" content="与我取得联系">
+    
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>👨‍💻</text></svg>">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/animations.css">
+    <link rel="stylesheet" href="../css/pages.css">
+</head>
+<body>
+    <div class="bg-grid"></div>
+    <div class="bg-glow bg-glow-1"></div>
+    <div class="bg-glow bg-glow-2"></div>
+
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="../index.html" class="logo">&lt;YourName /&gt;</a>
+            
+            <button class="mobile-menu-btn" aria-label="菜单">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            
+            <ul class="nav-links">
+                <li><a href="../index.html">首页</a></li>
+                <li><a href="about.html">关于</a></li>
+                <li><a href="projects.html">项目</a></li>
+                <li><a href="contact.html" class="active">联系</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="page-transition">
+        <!-- 页面标题 -->
+        <section class="page-header">
+            <div class="section-header fade-in">
+                <span class="section-tag">// 联系我</span>
+                <h1 class="section-title">让我们开始对话</h1>
+                <p class="section-subtitle">无论是项目合作、技术交流，还是只是想打个招呼</p>
+            </div>
+        </section>
+
+        <!-- 联系方式 -->
+        <section class="contact-section">
+            <div class="contact-grid">
+                
+                <!-- 联系信息 -->
+                <div class="contact-info fade-in">
+                    <h2>联系方式</h2>
+                    <p>我很乐意收到你的消息。你可以通过以下方式联系我：</p>
+                    
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <div class="method-icon">📧</div>
+                            <div class="method-content">
+                                <h4>邮箱</h4>
+                                <a href="mailto:your-email@example.com">your-email@example.com</a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <div class="method-icon">📍</div>
+                            <div class="method-content">
+                                <h4>位置</h4>
+                                <span>中国 · 上海</span>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <div class="method-icon">💼</div>
+                            <div class="method-content">
+                                <h4>工作状态</h4>
+                                <span class="status-badge">开放合作机会</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 社交链接 -->
+                    <div class="social-section">
+                        <h3>社交媒体</h3>
+                        <div class="social-links">
+                            <a href="https://github.com/yourusername" class="social-link" target="_blank" title="GitHub">
+                                <span>📦</span>
+                                <span>GitHub</span>
+                            </a>
+                            <a href="https://linkedin.com/in/yourusername" class="social-link" target="_blank" title="LinkedIn">
+                                <span>💼</span>
+                                <span>LinkedIn</span>
+                            </a>
+                            <a href="https://twitter.com/yourusername" class="social-link" target="_blank" title="Twitter">
+                                <span>🐦</span>
+                                <span>Twitter</span>
+                            </a>
+                            <a href="https://your-blog.com" class="social-link" target="_blank" title="博客">
+                                <span>✍️</span>
+                                <span>Blog</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 联系表单 -->
+                <div class="contact-form-wrapper fade-in">
+                    <div class="form-card">
+                        <h2>发送消息</h2>
+                        <p>填写表单，我会尽快回复你</p>
+                        
+                        <!-- 
+                        表单提交说明：
+                        1. 使用 Formspree: 将 action 改为 "https://formspree.io/f/你的ID"
+                        2. 使用 Netlify Forms: 添加 netlify 属性
+                        3. 使用自己的后端: 修改 action 为你的 API 地址
+                        -->
+                        <form class="contact-form" action="https://formspree.io/f/your-form-id" method="POST">
+                            <div class="form-group">
+                                <label for="name">姓名</label>
+                                <input 
+                                    type="text" 
+                                    id="name" 
+                                    name="name" 
+                                    placeholder="你的姓名"
+                                    required
+                                >
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">邮箱</label>
+                                <input 
+                                    type="email" 
+                                    id="email" 
+                                    name="email" 
+                                    placeholder="your@email.com"
+                                    required
+                                >
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="subject">主题</label>
+                                <select id="subject" name="subject">
+                                    <option value="合作咨询">合作咨询</option>
+                                    <option value="技术交流">技术交流</option>
+                                    <option value="工作机会">工作机会</option>
+                                    <option value="其他">其他</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message">消息内容</label>
+                                <textarea 
+                                    id="message" 
+                                    name="message" 
+                                    rows="5" 
+                                    placeholder="写下你想说的..."
+                                    required
+                                ></textarea>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary btn-full">
+                                发送消息 →
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ -->
+        <section class="faq-section">
+            <div class="section-header fade-in">
+                <span class="section-tag">// FAQ</span>
+                <h2 class="section-title">常见问题</h2>
+            </div>
+
+            <div class="faq-grid">
+                <div class="faq-item fade-in">
+                    <h3>你目前接受新项目吗？</h3>
+                    <p>是的，我目前开放项目合作。无论是短期项目还是长期合作，都欢迎联系我讨论。</p>
+                </div>
+                
+                <div class="faq-item fade-in">
+                    <h3>你的回复时间大概是多久？</h3>
+                    <p>我通常会在 24-48 小时内回复邮件。如果是紧急事项，请在邮件标题中注明。</p>
+                </div>
+                
+                <div class="faq-item fade-in">
+                    <h3>你提供哪些类型的服务？</h3>
+                    <p>我提供 Web 开发、移动应用开发、AI 应用开发、技术咨询等服务。具体可以查看我的项目页面了解更多。</p>
+                </div>
+                
+                <div class="faq-item fade-in">
+                    <h3>可以进行远程合作吗？</h3>
+                    <p>当然可以！我有丰富的远程协作经验，能够通过在线工具高效沟通和协作。</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-info">
+                <a href="../index.html" class="logo">&lt;YourName /&gt;</a>
+                <p>用代码创造价值，用设计传递美感</p>
+            </div>
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h4>导航</h4>
+                    <a href="../index.html">首页</a>
+                    <a href="about.html">关于</a>
+                    <a href="projects.html">项目</a>
+                    <a href="contact.html">联系</a>
+                </div>
+                <div class="footer-column">
+                    <h4>社交</h4>
+                    <a href="https://github.com/yourusername" target="_blank">GitHub</a>
+                    <a href="https://linkedin.com/in/yourusername" target="_blank">LinkedIn</a>
+                    <a href="https://twitter.com/yourusername" target="_blank">Twitter</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 <span class="highlight">你的名字</span>. 保留所有权利.</p>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

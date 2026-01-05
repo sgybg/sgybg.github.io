@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>你的名字 | 个人网站</title>
+    <meta name="description" content="一名热爱技术与创意的开发者的个人网站">
+    <meta name="keywords" content="开发者, 程序员, Web开发, 个人网站">
+    
+    <!-- 网站图标 -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>👨‍💻</text></svg>">
+    
+    <!-- 字体 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- 样式表 -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+    <!-- 背景效果 -->
+    <div class="bg-grid"></div>
+    <div class="bg-glow bg-glow-1"></div>
+    <div class="bg-glow bg-glow-2"></div>
+
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">&lt;YourName /&gt;</a>
+            
+            <button class="mobile-menu-btn" aria-label="菜单">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">首页</a></li>
+                <li><a href="pages/about.html">关于</a></li>
+                <li><a href="pages/projects.html">项目</a></li>
+                <li><a href="pages/contact.html">联系</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero 区域 -->
+        <section class="hero" id="home">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span>欢迎来到我的世界</span>
+                </div>
+                <h1>
+                    你好，我是<br>
+                    <span class="highlight">你的名字</span>
+                </h1>
+                <p class="hero-description">
+                    一名热爱技术与创意的开发者，专注于构建优雅且实用的数字产品。让我们一起探索代码的无限可能。
+                </p>
+                <div class="hero-buttons">
+                    <a href="pages/projects.html" class="btn btn-primary">查看作品</a>
+                    <a href="pages/contact.html" class="btn btn-secondary">联系我</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="avatar-container">
+                    <div class="avatar-ring"></div>
+                    <div class="avatar">
+                        <!-- 替换为你的头像: <img src="images/avatar.jpg" alt="头像"> -->
+                        👨‍💻
+                    </div>
+                    <div class="floating-badge badge-1">
+                        <span>🎨</span> UI/UX
+                    </div>
+                    <div class="floating-badge badge-2">
+                        <span>⚡</span> 全栈开发
+                    </div>
+                    <div class="floating-badge badge-3">
+                        <span>🚀</span> 创新者
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 简介区域 -->
+        <section class="intro">
+            <div class="section-header fade-in">
+                <span class="section-tag">// 简介</span>
+                <h2 class="section-title">我能为你做什么</h2>
+            </div>
+
+            <div class="services-grid">
+                <div class="service-card fade-in">
+                    <div class="service-icon">🎨</div>
+                    <h3>前端开发</h3>
+                    <p>构建响应式、交互丰富的现代化用户界面，注重用户体验与视觉美感。</p>
+                </div>
+
+                <div class="service-card fade-in">
+                    <div class="service-icon">⚙️</div>
+                    <h3>后端开发</h3>
+                    <p>设计和实现高性能、可扩展的服务端架构，保障系统稳定运行。</p>
+                </div>
+
+                <div class="service-card fade-in">
+                    <div class="service-icon">📱</div>
+                    <h3>移动应用</h3>
+                    <p>开发跨平台的原生体验移动应用，覆盖iOS和Android平台。</p>
+                </div>
+
+                <div class="service-card fade-in">
+                    <div class="service-icon">🤖</div>
+                    <h3>AI 应用</h3>
+                    <p>探索和应用人工智能技术，为产品赋予智能化能力。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 精选项目 -->
+        <section class="featured-projects">
+            <div class="section-header fade-in">
+                <span class="section-tag">// 精选项目</span>
+                <h2 class="section-title">近期作品</h2>
+                <p class="section-subtitle">展示我的技术能力和创造力</p>
+            </div>
+
+            <div class="projects-preview">
+                <div class="project-card fade-in">
+                    <div class="project-image">
+                        <div class="project-placeholder">🌐</div>
+                    </div>
+                    <div class="project-content">
+                        <span class="project-tag">Web 应用</span>
+                        <h3>智能数据仪表板</h3>
+                        <p>一个实时数据可视化平台，支持多维度分析。</p>
+                        <div class="project-tech">
+                            <span>React</span>
+                            <span>Node.js</span>
+                            <span>D3.js</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card fade-in">
+                    <div class="project-image">
+                        <div class="project-placeholder">🤖</div>
+                    </div>
+                    <div class="project-content">
+                        <span class="project-tag">AI 项目</span>
+                        <h3>智能对话助手</h3>
+                        <p>基于大语言模型的智能对话系统。</p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>LLM</span>
+                            <span>FastAPI</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card fade-in">
+                    <div class="project-image">
+                        <div class="project-placeholder">📱</div>
+                    </div>
+                    <div class="project-content">
+                        <span class="project-tag">移动应用</span>
+                        <h3>健康追踪 App</h3>
+                        <p>帮助用户追踪日常健康数据的应用。</p>
+                        <div class="project-tech">
+                            <span>Flutter</span>
+                            <span>Firebase</span>
+                            <span>Dart</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section-footer fade-in">
+                <a href="pages/projects.html" class="btn btn-secondary">查看全部项目 →</a>
+            </div>
+        </section>
+
+        <!-- CTA 区域 -->
+        <section class="cta fade-in">
+            <div class="cta-content">
+                <h2>有项目想法？</h2>
+                <p>让我们一起将你的想法变为现实</p>
+                <a href="pages/contact.html" class="btn btn-primary">开始合作</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-info">
+                <a href="index.html" class="logo">&lt;YourName /&gt;</a>
+                <p>用代码创造价值，用设计传递美感</p>
+            </div>
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h4>导航</h4>
+                    <a href="index.html">首页</a>
+                    <a href="pages/about.html">关于</a>
+                    <a href="pages/projects.html">项目</a>
+                    <a href="pages/contact.html">联系</a>
+                </div>
+                <div class="footer-column">
+                    <h4>社交</h4>
+                    <a href="https://github.com/yourusername" target="_blank">GitHub</a>
+                    <a href="https://linkedin.com/in/yourusername" target="_blank">LinkedIn</a>
+                    <a href="https://twitter.com/yourusername" target="_blank">Twitter</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 <span class="highlight">你的名字</span>. 保留所有权利.</p>
+        </div>
+    </footer>
+
+    <!-- 脚本 -->
+    <script src="js/main.js"></script>
+</body>
+</html>

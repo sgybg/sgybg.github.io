@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>项目作品 | 你的名字</title>
+    <meta name="description" content="查看我的项目作品集">
+    
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>👨‍💻</text></svg>">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/animations.css">
+    <link rel="stylesheet" href="../css/pages.css">
+</head>
+<body>
+    <div class="bg-grid"></div>
+    <div class="bg-glow bg-glow-1"></div>
+    <div class="bg-glow bg-glow-2"></div>
+
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="../index.html" class="logo">&lt;YourName /&gt;</a>
+            
+            <button class="mobile-menu-btn" aria-label="菜单">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            
+            <ul class="nav-links">
+                <li><a href="../index.html">首页</a></li>
+                <li><a href="about.html">关于</a></li>
+                <li><a href="projects.html" class="active">项目</a></li>
+                <li><a href="contact.html">联系</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="page-transition">
+        <!-- 页面标题 -->
+        <section class="page-header">
+            <div class="section-header fade-in">
+                <span class="section-tag">// 项目作品</span>
+                <h1 class="section-title">我的作品集</h1>
+                <p class="section-subtitle">精心打造的每一个项目都凝聚着对技术和设计的热爱</p>
+            </div>
+        </section>
+
+        <!-- 项目筛选 -->
+        <section class="projects-filter fade-in">
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">全部</button>
+                <button class="filter-btn" data-filter="web">Web 应用</button>
+                <button class="filter-btn" data-filter="mobile">移动应用</button>
+                <button class="filter-btn" data-filter="ai">AI 项目</button>
+                <button class="filter-btn" data-filter="other">其他</button>
+            </div>
+        </section>
+
+        <!-- 项目列表 -->
+        <section class="projects-section">
+            <div class="projects-grid-full">
+                
+                <!-- 项目 1 -->
+                <div class="project-card-full fade-in" data-category="web">
+                    <div class="project-image">
+                        <!-- 替换为项目截图: <img src="../images/project1.jpg" alt="项目截图"> -->
+                        <div class="project-placeholder">🌐</div>
+                    </div>
+                    <div class="project-content">
+                        <span class="project-tag">Web 应用</span>
+                        <h3>智能数据仪表板</h3>
+                        <p>一个功能强大的实时数据可视化平台，支持多维度数据分析、自定义报表生成和数据导出功能。采用现代化的前端技术栈，提供流畅的用户体验。</p>
+                        <div class="project-tech">
+                            <span>React</span>
+                            <span>TypeScript</span>
+                            <span>Node.js</span>
+                            <span>D3.js</span>
+                            <span>PostgreSQL</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link" target="_blank">
+                                <span>🔗</span> 在线预览
+                            </a>
+                            <a href="#" class="project-link" target="_blank">
+                                <span>📂</span> GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 项目 2 -->
+                <div class="project-card-full fade-in" data-category="ai">
+                    <div class="project-image">
+                        <div class="project-placeholder">🤖</div>
+                    </div>
+                    <div class="project-content">
+                        <span class="project-tag">AI 项目</span>
+                        <h3>智能对话助手</h3>
+                        <p>基于大语言模型的智能对话系统，支持多轮对话、知识问答和任务执行。具备上下文理解能力，可以根据用户需求提供个性化的回答。</p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>FastAPI</span>
+                            <span>LangChain</span>
+                            <span>OpenAI</span>
+                            <span>Redis</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link" target="_blank">
+                                <span>🔗</span> 在线预览
+                            </a>
+                            <a href="#" class="project-link" target="_blank">
+                                <span>📂</span> GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 项目 3 -->
+                <div class="project-card-full fade-in" data-category="mobile">
+                    <div class="project-image">
+                        <div class="project-placeholder">📱</div>
+                    </div>
+                    <div class="project-content">
+                        <span class="project-tag">移动应用</span>
+                        <h3>健康追踪 App</h3>
+                        <p>帮助用户追踪日常健康数据的移动应用，包括运动记录、饮食日志、睡眠监测等功能。提供个性化的健康建议和目标设定。</p>
+                        <div class="project-tech">
+                            <span>Flutter</span>
+                            <span>Dart</span>
+                            <span>Firebase</span>
+                            <span>HealthKit</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link" target="_blank">
+                                <span>🔗</span> App Store
+                            </a>
+                            <a href="#" class="project-link" target="_blank">
+                                <span>📂</span> GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 项目 4 -->
+                <div class="project-card-full fade-in" data-category="web">
+                    <div class="project-image">
+                        <div class="project-placeholder">🛒</div>
+                    </div>
+                    <div class="project-content">
+                        <span class="project-tag">电商平台</span>
+                        <h3>现代电商系统</h3>
+                        <p>全栈电商解决方案，包含商品管理、购物车、支付系统、订单管理等完整功能。支持多种支付方式和物流追踪。</p>
+                        <div class="project-tech">
+                            <span>Vue.js</span>
+                            <span>Nuxt</span>
+                            <span>Node.js</span>
+                            <span>MongoDB</span>
+                            <span>Stripe</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link" target="_blank">
+                                <span>🔗</span> 在线预览
+                            </a>
+                            <a href="#" class="project-link" target="_blank">
+                                <span>📂</span> GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 项目 5 -->
+                <div class="project-card-full fade-in" data-category="web">
+                    <div class="project-image">
+                        <div class="project-placeholder">✍️</div>
+                    </div>
+                    <div class="project-content">
+                        <span class="project-tag">Web 应用</span>
+                        <h3>个人博客系统</h3>
+                        <p>一个简洁优雅的个人博客系统，支持 Markdown 写作、标签分类、评论系统和 SEO 优化。采用 JAMStack 架构，访问速度极快。</p>
+                        <div class="project-tech">
+                            <span>Next.js</span>
+                            <span>MDX</span>
+                            <span>Tailwind</span>
+                            <span>Vercel</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link" target="_blank">
+                                <span>🔗</span> 在线预览
+                            </a>
+                            <a href="#" class="project-link" target="_blank">
+                                <span>📂</span> GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 项目 6 -->
+                <div class="project-card-full fade-in" data-category="other">
+                    <div class="project-image">
+                        <div class="project-placeholder">🔧</div>
+                    </div>
+                    <div class="project-content">
+                        <span class="project-tag">开源工具</span>
+                        <h3>CLI 开发工具</h3>
+                        <p>一个提高开发效率的命令行工具集，包含项目脚手架生成、代码格式化、Git 工作流简化等功能。已在 npm 发布，获得良好反馈。</p>
+                        <div class="project-tech">
+                            <span>Node.js</span>
+                            <span>Commander</span>
+                            <span>Inquirer</span>
+                            <span>npm</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link" target="_blank">
+                                <span>📦</span> npm
+                            </a>
+                            <a href="#" class="project-link" target="_blank">
+                                <span>📂</span> GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- 更多项目提示 -->
+        <section class="more-projects fade-in">
+            <div class="more-content">
+                <p>🚀 更多项目正在路上...</p>
+                <p>想要查看更多项目？访问我的 GitHub 主页</p>
+                <a href="https://github.com/yourusername" class="btn btn-secondary" target="_blank">
+                    访问 GitHub →
+                </a>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="cta fade-in">
+            <div class="cta-content">
+                <h2>对我的项目感兴趣？</h2>
+                <p>让我们讨论如何一起创造精彩</p>
+                <a href="contact.html" class="btn btn-primary">联系我</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-info">
+                <a href="../index.html" class="logo">&lt;YourName /&gt;</a>
+                <p>用代码创造价值，用设计传递美感</p>
+            </div>
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h4>导航</h4>
+                    <a href="../index.html">首页</a>
+                    <a href="about.html">关于</a>
+                    <a href="projects.html">项目</a>
+                    <a href="contact.html">联系</a>
+                </div>
+                <div class="footer-column">
+                    <h4>社交</h4>
+                    <a href="https://github.com/yourusername" target="_blank">GitHub</a>
+                    <a href="https://linkedin.com/in/yourusername" target="_blank">LinkedIn</a>
+                    <a href="https://twitter.com/yourusername" target="_blank">Twitter</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 <span class="highlight">你的名字</span>. 保留所有权利.</p>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+    <script>
+        // 项目筛选功能
+        document.addEventListener('DOMContentLoaded', function() {
+            const filterButtons = document.querySelectorAll('.filter-btn');
+            const projects = document.querySelectorAll('.project-card-full');
+            
+            filterButtons.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    // 更新按钮状态
+                    filterButtons.forEach(b => b.classList.remove('active'));
+                    this.classList.add('active');
+                    
+                    const filter = this.dataset.filter;
+                    
+                    // 筛选项目
+                    projects.forEach(project => {
+                        if (filter === 'all' || project.dataset.category === filter) {
+                            project.style.display = 'grid';
+                            setTimeout(() => {
+                                project.style.opacity = '1';
+                                project.style.transform = 'translateY(0)';
+                            }, 50);
+                        } else {
+                            project.style.opacity = '0';
+                            project.style.transform = 'translateY(20px)';
+                            setTimeout(() => {
+                                project.style.display = 'none';
+                            }, 300);
+                        }
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+</html>
